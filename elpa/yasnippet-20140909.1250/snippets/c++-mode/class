@@ -1,0 +1,24 @@
+# -*- mode: snippet -*-
+# name: class
+# key: cls
+# --
+/** 
+  * \class ${1:$(yas/substr yas-text "[^: ]*")}
+  * \brief ${3:brief}.
+  *
+  * \author ${4:Carlos M. Mateo}
+  */
+class ${1:Name}
+{
+public:
+    /**
+      * \brief Default constructor. 
+      */
+    ${1:$(yas/substr yas-text "[^: ]*")} ();
+
+    /**
+      * \brief Destructor.
+      */
+    ${2:virtual ~${1:$(yas/substr yas-text "[^: ]*")} ();}
+};
+$0
