@@ -2,7 +2,7 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Mon Sep 15 00:47:50 2014
+;; Created Fri Sep 19 22:04:11 2014
 ;; Desktop file format version 206
 ;; Emacs version 24.3.1
 
@@ -16,6 +16,17 @@
 (setq file-name-history '("~/.emacs" "~/catkin_ws/src/rigid_shape_recognition/wiki/Home.md" "~/.emacs" "~/.emacs.d/elpa/yasnippet-20140909.1250/snippets/c++-mode/iterator" "~/.emacs.d/elpa/yasnippet-20140909.1250/snippets/c++-mode/citerator" "~/.emacs.d/elpa/yasnippet-20140909.1250/snippets/c++-mode/iterator" "~/.emacs.d/elpa/yasnippet-20140909.1250/snippets/c++-mode/fori" "~/.emacs.d/elpa/yasnippet-20140909.1250/snippets/c++-mode/fori.1" "~/.emacs.d/elpa/yasnippet-20140909.1250/snippets/cc-mode/inc.1" "~/.emacs.d/elpa/yasnippet-20140909.1250/snippets/c++-mode/fori" "~/.emacs.d/elpa/yasnippet-20140909.1250/snippets/c++-mode/for" "~/.emacs.d/elpa/yasnippet-20140909.1250/snippets/c++-mode/fori" "~/.emacs.d/elpa/yasnippet-20140909.1250/snippets/c++-mode/class" "/usr/local/src/pcl/common/include/pcl/point_cloud.h" "/usr/local/src/pcl/common/common.doxy" "~/.emacs.d/elpa/yasnippet-20140909.1250/snippets/c++-mode/fun_declaration" "/usr/local/src/pcl/common/include/pcl/exceptions.h" "~/catkin_ws/src/rigid_3d_shape_recognition/include/rigid_3d_shape_recognition/shape_recognition.h" "~/catkin_ws/src/rigid_3d_shape_recognition/src/shape_extraction_node.cpp" "~/.emacs" "~/.emacs.d/" "~/catkin_ws/src/rigid_3d_shape_recognition/src/shape_extraction_node.cpp"))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 206
+  "/home/carlos/.emacs.d/.git/COMMIT_EDITMSG"
+  "COMMIT_EDITMSG"
+  'fundamental-mode
+  '(yas-minor-mode)
+  23
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
 (desktop-create-buffer 206
   "/home/carlos/.emacs"
   ".emacs"
@@ -56,17 +67,6 @@
   '(yas-minor-mode)
   130
   '(407 nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix) (fill-column . 70) (case-fold-search . t) (truncate-lines)))
-
-(desktop-create-buffer 206
-  "/home/carlos/catkin_ws/src/rigid_shape_recognition/CMakeLists.txt"
-  "CMakeLists.txt"
-  'cmake-mode
-  '(iedit-mode yas-minor-mode)
-  4009
-  '(3992 nil)
   nil
   nil
   '((buffer-file-coding-system . undecided-unix) (fill-column . 70) (case-fold-search . t) (truncate-lines)))
@@ -114,4 +114,15 @@
   t
   nil
   '((tab-width . 2) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/carlos/catkin_ws/src/rigid_shape_recognition/CMakeLists.txt"
+  "CMakeLists.txt"
+  'cmake-mode
+  '(iedit-mode yas-minor-mode)
+  4009
+  '(3992 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix) (fill-column . 70) (case-fold-search . t) (truncate-lines)))
 
