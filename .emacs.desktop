@@ -2,7 +2,7 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Mon Sep 15 00:39:06 2014
+;; Created Mon Sep 15 00:47:50 2014
 ;; Desktop file format version 206
 ;; Emacs version 24.3.1
 
@@ -13,16 +13,27 @@
 (setq search-ring '("pcl_ro" "tre" "tr" "yas" "vectorType"))
 (setq regexp-search-ring nil)
 (setq register-alist (list (list 101 "Unprintable entity" (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (list 'lambda '() (list 'set-marker mk nil (get-buffer " *temp*")))) mk)) (list 51 '(frame-configuration ("Unprintable entity" ((parent-id . 36555340) (explicit-name) (display . ":0") (visibility . t) (icon-name) (outer-window-id . "73400491") (window-id . "73400499") (top . 18) (left . 61) (buried-buffer-list "Unprintable entity" "Unprintable entity" "Unprintable entity" "Unprintable entity" "Unprintable entity" "Unprintable entity" "Unprintable entity" "Unprintable entity" "Unprintable entity" "Unprintable entity" "Unprintable entity" "Unprintable entity" "Unprintable entity") (buffer-list "Unprintable entity") (unsplittable) (minibuffer . "Unprintable entity") (modeline . t) (width . 262) (height . 74) (name . "emacs - shape_extraction_node.cpp") (environment) (sticky) (cursor-color . "#00BBFF") (background-mode . light) (display-type . color) (horizontal-scroll-bars . t) (window-system . x) (alpha) (scroll-bar-width . 0) (cursor-type . box) (auto-lower) (auto-raise) (icon-type . t) (tool-bar-position . top) (fullscreen . maximized) (wait-for-wm . t) (title) (buffer-predicate) (tool-bar-lines . 0) (menu-bar-lines . 1) (scroll-bar-background) (scroll-bar-foreground) (right-fringe . 11) (left-fringe . 10) (line-spacing) (screen-gamma) (border-color . "black") (mouse-color . "black") (background-color . "#EDEDED") (foreground-color . "#2E3436") (vertical-scroll-bars) (internal-border-width . 0) (border-width . 0) (font-parameter . "Ubuntu Mono 13") (font . "-unknown-Ubuntu Mono-normal-normal-normal-*-13-*-*-*-m-0-iso10646-1") (font-backend xft x)) "Unprintable entity")) (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (list 'lambda '() (list 'set-marker mk nil (get-buffer " *temp*")))) mk)) (list 49 "Unprintable entity" (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (list 'lambda '() (list 'set-marker mk nil (get-buffer " *temp*")))) mk)) (list 50 "Unprintable entity" (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (list 'lambda '() (list 'set-marker mk nil (get-buffer " *temp*")))) mk))))
-(setq file-name-history '("~/catkin_ws/src/rigid_shape_recognition/wiki/Home.md" "~/.emacs" "~/.emacs.d/elpa/yasnippet-20140909.1250/snippets/c++-mode/iterator" "~/.emacs.d/elpa/yasnippet-20140909.1250/snippets/c++-mode/citerator" "~/.emacs.d/elpa/yasnippet-20140909.1250/snippets/c++-mode/iterator" "~/.emacs.d/elpa/yasnippet-20140909.1250/snippets/c++-mode/fori" "~/.emacs.d/elpa/yasnippet-20140909.1250/snippets/c++-mode/fori.1" "~/.emacs.d/elpa/yasnippet-20140909.1250/snippets/cc-mode/inc.1" "~/.emacs.d/elpa/yasnippet-20140909.1250/snippets/c++-mode/fori" "~/.emacs.d/elpa/yasnippet-20140909.1250/snippets/c++-mode/for" "~/.emacs.d/elpa/yasnippet-20140909.1250/snippets/c++-mode/fori" "~/.emacs.d/elpa/yasnippet-20140909.1250/snippets/c++-mode/class" "/usr/local/src/pcl/common/include/pcl/point_cloud.h" "/usr/local/src/pcl/common/common.doxy" "~/.emacs.d/elpa/yasnippet-20140909.1250/snippets/c++-mode/fun_declaration" "/usr/local/src/pcl/common/include/pcl/exceptions.h" "~/catkin_ws/src/rigid_3d_shape_recognition/include/rigid_3d_shape_recognition/shape_recognition.h" "~/catkin_ws/src/rigid_3d_shape_recognition/src/shape_extraction_node.cpp" "~/.emacs" "~/.emacs.d/" "~/catkin_ws/src/rigid_3d_shape_recognition/src/shape_extraction_node.cpp"))
+(setq file-name-history '("~/.emacs" "~/catkin_ws/src/rigid_shape_recognition/wiki/Home.md" "~/.emacs" "~/.emacs.d/elpa/yasnippet-20140909.1250/snippets/c++-mode/iterator" "~/.emacs.d/elpa/yasnippet-20140909.1250/snippets/c++-mode/citerator" "~/.emacs.d/elpa/yasnippet-20140909.1250/snippets/c++-mode/iterator" "~/.emacs.d/elpa/yasnippet-20140909.1250/snippets/c++-mode/fori" "~/.emacs.d/elpa/yasnippet-20140909.1250/snippets/c++-mode/fori.1" "~/.emacs.d/elpa/yasnippet-20140909.1250/snippets/cc-mode/inc.1" "~/.emacs.d/elpa/yasnippet-20140909.1250/snippets/c++-mode/fori" "~/.emacs.d/elpa/yasnippet-20140909.1250/snippets/c++-mode/for" "~/.emacs.d/elpa/yasnippet-20140909.1250/snippets/c++-mode/fori" "~/.emacs.d/elpa/yasnippet-20140909.1250/snippets/c++-mode/class" "/usr/local/src/pcl/common/include/pcl/point_cloud.h" "/usr/local/src/pcl/common/common.doxy" "~/.emacs.d/elpa/yasnippet-20140909.1250/snippets/c++-mode/fun_declaration" "/usr/local/src/pcl/common/include/pcl/exceptions.h" "~/catkin_ws/src/rigid_3d_shape_recognition/include/rigid_3d_shape_recognition/shape_recognition.h" "~/catkin_ws/src/rigid_3d_shape_recognition/src/shape_extraction_node.cpp" "~/.emacs" "~/.emacs.d/" "~/catkin_ws/src/rigid_3d_shape_recognition/src/shape_extraction_node.cpp"))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 206
+  "/home/carlos/.emacs"
+  ".emacs"
+  'emacs-lisp-mode
+  '(yas-minor-mode auto-complete-mode)
+  6918
+  '(4858 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
 (desktop-create-buffer 206
   "/home/carlos/catkin_ws/src/rigid_shape_recognition/include/rigid_shape_recognition/impl/change_resolution.hpp"
   "change_resolution.hpp"
   'c++-mode
   '(abbrev-mode yas-minor-mode auto-complete-mode flymake-mode linum-mode hs-minor-mode)
-  852
-  '(877 t)
+  916
+  '(931 nil)
   nil
   nil
   '((tab-width . 2) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (overwrite-mode) (fill-column . 70) (case-fold-search . t) (truncate-lines)))
@@ -81,17 +92,6 @@
   nil
   nil
   '((tab-width . 2) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (fill-column . 70) (case-fold-search . t) (truncate-lines)))
-
-(desktop-create-buffer 206
-  "/home/carlos/.emacs"
-  ".emacs"
-  'emacs-lisp-mode
-  '(yas-minor-mode auto-complete-mode)
-  4915
-  '(4858 nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix)))
 
 (desktop-create-buffer 206
   "/home/carlos/catkin_ws/src/rigid_shape_recognition/package.xml"
