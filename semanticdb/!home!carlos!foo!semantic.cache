@@ -1,0 +1,30 @@
+;; Object foo/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "foo/"
+  :tables (list 
+   (semanticdb-table "passthrough.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("pcl/point_types.h" include (:system-flag t) nil [21 49])
+            ("pcl/filters/passthrough.h" include (:system-flag t) nil [50 86])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [113 122])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [123 135]))                  
+                :type "int")
+                nil [103 1533]))          
+    :file "passthrough.cpp"
+    :pointmax 1534
+    :fsize 1553
+    :lastmodtime '(21698 54796 409742 264000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!carlos!foo!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

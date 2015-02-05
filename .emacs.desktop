@@ -2,7 +2,7 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Fri Sep 19 22:21:05 2014
+;; Created Tue Jan 20 22:05:38 2015
 ;; Desktop file format version 206
 ;; Emacs version 24.3.1
 
@@ -10,119 +10,20 @@
 (setq desktop-missing-file-warning nil)
 (setq tags-file-name nil)
 (setq tags-table-list nil)
-(setq search-ring '("pcl_ro" "tre" "tr" "yas" "vectorType"))
+(setq search-ring '("displayCur" "plot" "mut" "close" "rosSh" "on_view" "write" "skeleton" "catkin_depe" "project_" "showworld " "scene_cloud_view_" "calla" "call" "generate_dy" "tilt_status"))
 (setq regexp-search-ring nil)
 (setq register-alist (list (list 101 "Unprintable entity" (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (list 'lambda '() (list 'set-marker mk nil (get-buffer " *temp*")))) mk)) (list 51 '(frame-configuration ("Unprintable entity" ((parent-id . 36555340) (explicit-name) (display . ":0") (visibility . t) (icon-name) (outer-window-id . "73400491") (window-id . "73400499") (top . 18) (left . 61) (buried-buffer-list "Unprintable entity" "Unprintable entity" "Unprintable entity" "Unprintable entity" "Unprintable entity" "Unprintable entity" "Unprintable entity" "Unprintable entity" "Unprintable entity" "Unprintable entity" "Unprintable entity" "Unprintable entity" "Unprintable entity") (buffer-list "Unprintable entity") (unsplittable) (minibuffer . "Unprintable entity") (modeline . t) (width . 262) (height . 74) (name . "emacs - shape_extraction_node.cpp") (environment) (sticky) (cursor-color . "#00BBFF") (background-mode . light) (display-type . color) (horizontal-scroll-bars . t) (window-system . x) (alpha) (scroll-bar-width . 0) (cursor-type . box) (auto-lower) (auto-raise) (icon-type . t) (tool-bar-position . top) (fullscreen . maximized) (wait-for-wm . t) (title) (buffer-predicate) (tool-bar-lines . 0) (menu-bar-lines . 1) (scroll-bar-background) (scroll-bar-foreground) (right-fringe . 11) (left-fringe . 10) (line-spacing) (screen-gamma) (border-color . "black") (mouse-color . "black") (background-color . "#EDEDED") (foreground-color . "#2E3436") (vertical-scroll-bars) (internal-border-width . 0) (border-width . 0) (font-parameter . "Ubuntu Mono 13") (font . "-unknown-Ubuntu Mono-normal-normal-normal-*-13-*-*-*-m-0-iso10646-1") (font-backend xft x)) "Unprintable entity")) (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (list 'lambda '() (list 'set-marker mk nil (get-buffer " *temp*")))) mk)) (list 49 "Unprintable entity" (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (list 'lambda '() (list 'set-marker mk nil (get-buffer " *temp*")))) mk)) (list 50 "Unprintable entity" (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (list 'lambda '() (list 'set-marker mk nil (get-buffer " *temp*")))) mk))))
-(setq file-name-history '("~/.emacs" "~/catkin_ws/src/rigid_shape_recognition/wiki/Home.md" "~/.emacs" "~/.emacs.d/elpa/yasnippet-20140909.1250/snippets/c++-mode/iterator" "~/.emacs.d/elpa/yasnippet-20140909.1250/snippets/c++-mode/citerator" "~/.emacs.d/elpa/yasnippet-20140909.1250/snippets/c++-mode/iterator" "~/.emacs.d/elpa/yasnippet-20140909.1250/snippets/c++-mode/fori" "~/.emacs.d/elpa/yasnippet-20140909.1250/snippets/c++-mode/fori.1" "~/.emacs.d/elpa/yasnippet-20140909.1250/snippets/cc-mode/inc.1" "~/.emacs.d/elpa/yasnippet-20140909.1250/snippets/c++-mode/fori" "~/.emacs.d/elpa/yasnippet-20140909.1250/snippets/c++-mode/for" "~/.emacs.d/elpa/yasnippet-20140909.1250/snippets/c++-mode/fori" "~/.emacs.d/elpa/yasnippet-20140909.1250/snippets/c++-mode/class" "/usr/local/src/pcl/common/include/pcl/point_cloud.h" "/usr/local/src/pcl/common/common.doxy" "~/.emacs.d/elpa/yasnippet-20140909.1250/snippets/c++-mode/fun_declaration" "/usr/local/src/pcl/common/include/pcl/exceptions.h" "~/catkin_ws/src/rigid_3d_shape_recognition/include/rigid_3d_shape_recognition/shape_recognition.h" "~/catkin_ws/src/rigid_3d_shape_recognition/src/shape_extraction_node.cpp" "~/.emacs" "~/.emacs.d/" "~/catkin_ws/src/rigid_3d_shape_recognition/src/shape_extraction_node.cpp"))
+(setq file-name-history '("~/.emacs" "~/catkin_ws/src/rigid_shape_recognition_v2/include/rigid_shape_recognition_v2/component/visualizer.h" "~/catkin_ws/src/rigid_shape_recognition_v2/src/rigid_shape_recognition_v2/component/visualizer.cpp" "~/catkin_ws/src/rigid_shape_recognition_v2/include/rigid_shape_recognition_v2/ui/qplotter.h" "~/catkin_ws/src/rigid_shape_recognition_v2/src/rigid_shape_recognition_v2/ui/qplotter.cpp" "~/catkin_ws/src/rigid_shape_recognition_v2/include/rigid_shape_recognition_v2/ui/qprocessor.h" "~/catkin_ws/src/rigid_shape_recognition_v2/src/rigid_shape_recognition_v2/ui/qprocessor.cpp" "~/catkin_ws/src/rigid_shape_recognition_v2/include/rigid_shape_recognition_v2/component/plotter.h" "~/catkin_ws/src/rigid_shape_recognition_v2/include/rigid_shape_recognition_v2/component/processor.h" "~/catkin_ws/src/rigid_shape_recognition_v2/include/rigid_shape_recognition_v2/component/visualizer.h" "~/catkin_ws/src/rigid_shape_recognition_v2/src/rigid_shape_recognition_v2/component/visualizer.cpp" "~/catkin_ws/src/rigid_shape_recognition_v2/src/rigid_shape_recognition_v2/ui/qvisualizer.cpp" "~/catkin_ws/src/rigid_shape_recognition_v2/include/rigid_shape_recognition_v2/ui/qnode.h" "~/catkin_ws/src/rigid_shape_recognition_v2/src/rigid_shape_recognition_v2/ui/qnode.cpp" "~/catkin_ws/src/rigid_shape_recognition_v2/include/rigid_shape_recognition_v2/ui/qvisualizer.h" "~/catkin_ws/src/rigid_shape_recognition_v2/src/rigid_shape_recognition_v2/ui/qvisualizer.cpp" "~/catkin_ws/src/rigid_shape_recognition_v2/include/rigid_shape_recognition_v2/main_window.h" "~/catkin_ws/src/rigid_shape_recognition_v2/src/rigid_shape_recognition_v2/main_window.cpp" "~/catkin_ws/src/rigid_shape_recognition_v2/src/main.cpp" "~/catkin_ws/src/rigid_shape_recognition_v2/" "/usr/local/src/pcl/test/test_non_linear.cpp" "~/catkin_ws/build/test_results/rigid_shape_recognition_v2/gtest-rigid_shape_recognition_v2_test.xml" "~/catkin_ws/src/rigid_shape_recognition_v2/test/test_rigid_shape_recognition_v2.cpp" "~/catkin_ws/build/test_results/rigid_shape_recognition_v2/nosetests-test.xml" "~/catkin_ws/src/rigid_shape_recognition_v2/test/my_test.py" "~/catkin_ws/src/rigid_shape_recognition_v2/package.xml" "~/.emacs.d/elpa/yasnippet-20140909.1250/snippets/cc-mode/main" "~/.emacs.d/elpa/yasnippet-20140909.1250/snippets/c-mode/" "~/catkin_ws/src/rigid_shape_recognition_v2/test/test_rigid_shape_recognition_v2.cpp" "~/catkin_ws/src/rigid_shape_recognition_v2/src/rigid_shape_recognition_v2/main_window.cpp"))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
-(desktop-create-buffer 206
-  "/home/carlos/.emacs.d/.git/COMMIT_EDITMSG"
-  "COMMIT_EDITMSG"
-  'fundamental-mode
-  '(yas-minor-mode)
-  345
-  '(nil nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix)))
-
 (desktop-create-buffer 206
   "/home/carlos/.emacs"
   ".emacs"
   'emacs-lisp-mode
   '(yas-minor-mode auto-complete-mode)
-  6918
-  '(4858 nil)
+  310
+  '(41 nil)
   nil
   nil
   '((buffer-file-coding-system . undecided-unix)))
-
-(desktop-create-buffer 206
-  "/home/carlos/catkin_ws/src/rigid_shape_recognition/include/rigid_shape_recognition/impl/change_resolution.hpp"
-  "change_resolution.hpp"
-  'c++-mode
-  '(abbrev-mode yas-minor-mode auto-complete-mode flymake-mode linum-mode hs-minor-mode)
-  916
-  '(931 nil)
-  nil
-  nil
-  '((tab-width . 2) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (overwrite-mode) (fill-column . 70) (case-fold-search . t) (truncate-lines)))
-
-(desktop-create-buffer 206
-  "/home/carlos/catkin_ws/src/rigid_shape_recognition/wiki/Home.md"
-  "Home.md"
-  'fundamental-mode
-  '(yas-minor-mode)
-  638
-  '(908 nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix)))
-
-(desktop-create-buffer 206
-  "/home/carlos/.emacs.d/elpa/yasnippet-20140909.1250/snippets/c++-mode/class"
-  "class"
-  'snippet-mode
-  '(yas-minor-mode)
-  130
-  '(407 nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix) (fill-column . 70) (case-fold-search . t) (truncate-lines)))
-
-(desktop-create-buffer 206
-  "/home/carlos/catkin_ws/src/rigid_shape_recognition/src/rigid_shape_recognition/change_resolution.cpp"
-  "change_resolution.cpp"
-  'c++-mode
-  '(abbrev-mode yas-minor-mode auto-complete-mode linum-mode hs-minor-mode)
-  169
-  '(117 nil)
-  nil
-  nil
-  '((tab-width . 2) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix) (fill-column . 70) (case-fold-search . t) (truncate-lines)))
-
-(desktop-create-buffer 206
-  "/home/carlos/catkin_ws/src/rigid_shape_recognition/include/rigid_shape_recognition/change_resolution.h"
-  "change_resolution.h"
-  'c++-mode
-  '(abbrev-mode yas-minor-mode auto-complete-mode flymake-mode linum-mode hs-minor-mode)
-  1267
-  '(1338 nil)
-  nil
-  nil
-  '((tab-width . 2) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (fill-column . 70) (case-fold-search . t) (truncate-lines)))
-
-(desktop-create-buffer 206
-  "/home/carlos/catkin_ws/src/rigid_shape_recognition/package.xml"
-  "package.xml"
-  'nxml-mode
-  '(yas-minor-mode)
-  1659
-  '(745 nil)
-  nil
-  nil
-  '((buffer-file-coding-system . utf-8-unix)))
-
-(desktop-create-buffer 206
-  "/usr/local/include/pcl-1.8/pcl/filters/filter.h"
-  "filter.h"
-  'c++-mode
-  '(abbrev-mode yas-minor-mode auto-complete-mode flymake-mode linum-mode hs-minor-mode)
-  8225
-  '(8277 t)
-  t
-  nil
-  '((tab-width . 2) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
-
-(desktop-create-buffer 206
-  "/home/carlos/catkin_ws/src/rigid_shape_recognition/CMakeLists.txt"
-  "CMakeLists.txt"
-  'cmake-mode
-  '(iedit-mode yas-minor-mode)
-  4009
-  '(3992 nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix) (fill-column . 70) (case-fold-search . t) (truncate-lines)))
 

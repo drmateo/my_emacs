@@ -4,7 +4,7 @@
 
 
 ;;;### (autoloads nil nil ("dropdown-list-pkg.el" "dropdown-list.el")
-;;;;;;  (21524 10923 261776 380000))
+;;;;;;  (21715 59567 236886 604000))
 
 ;;;***
 

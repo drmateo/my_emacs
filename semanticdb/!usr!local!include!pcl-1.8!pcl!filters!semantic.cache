@@ -1,0 +1,592 @@
+;; Object filters/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "filters/"
+  :tables (list 
+   (semanticdb-table "passthrough.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("PCL_FILTERS_PASSTHROUGH_H_" variable (:constant-flag t) nil [1791 1817])
+            ("pcl/filters/filter_indices.h" include (:system-flag t) nil [1819 1858])
+            ("pcl" type
+               (:members 
+                  ( ("PassThrough" type
+                       (:template 
+                          ( ("PointT" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("protected" label nil (reparse-symbol classsubparts) [3795 3805])
+                            ("PointCloud" variable (:type ("PointCloud" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3852 3874])
+                            ("PointCloudPtr" type
+                               (:typedef ("PointCloud::Ptr" type (:type "class") nil nil)
+                                :superclasses "PointCloud::Ptr"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3881 3928])
+                            ("PointCloudConstPtr" type
+                               (:typedef ("PointCloud::ConstPtr" type (:type "class") nil nil)
+                                :superclasses "PointCloud::ConstPtr"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3935 3992])
+                            ("FieldList" type
+                               (:typedef ("pcl::traits::fieldList::type" type (:type "class") nil nil)
+                                :superclasses "pcl::traits::fieldList::type"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3999 4063])
+                            ("public" label nil (reparse-symbol classsubparts) [4069 4076])
+                            ("Ptr" type
+                               (:typedef ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("PassThrough" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "boost::shared_ptr"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [4084 4137])
+                            ("ConstPtr" type
+                               (:typedef ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("PassThrough" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "boost::shared_ptr"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [4144 4208])
+                            ("PassThrough" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("extract_removed_indices" variable (:type "bool") (reparse-symbol arg-sub-list) [4417 4447])
+                                    ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4448 4454]))                                  
+                                :type ("PassThrough" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4404 4688])
+                            ("setFilterFieldName" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("field_name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5045 5075]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5007 5132])
+                            ("getFilterFieldName" function
+                               (:typemodifiers ("inline")
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5303 5408])
+                            ("setFilterLimits" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("limit_min" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type "float")
+                                        (reparse-symbol arg-sub-list) [5844 5867])
+                                    ("limit_max" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type "float")
+                                        (reparse-symbol arg-sub-list) [5868 5891]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5809 5985])
+                            ("getFilterLimits" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("limit_min" variable
+                                       (:reference 1
+                                        :type "float")
+                                        (reparse-symbol arg-sub-list) [6285 6302])
+                                    ("limit_max" variable
+                                       (:reference 1
+                                        :type "float")
+                                        (reparse-symbol arg-sub-list) [6303 6320]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6250 6414])
+                            ("setFilterLimitsNegative" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("limit_negative" variable
+                                       (:constant-flag t
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [6805 6831]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6762 6883])
+                            ("getFilterLimitsNegative" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("limit_negative" variable
+                                       (:reference 1
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [7268 7289]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [7225 7341])
+                            ("getFilterLimitsNegative" function
+                               (:typemodifiers ("inline")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [7664 7752])
+                            ("protected" label nil (reparse-symbol classsubparts) [7758 7768])
+                            ("PCLBase::input_" variable (:type "int") (reparse-symbol classsubparts) [7781 7805])
+                            ("PCLBase::indices_" variable (:type "int") (reparse-symbol classsubparts) [7818 7844])
+                            ("Filter::filter_name_" variable (:type "int") (reparse-symbol classsubparts) [7857 7886])
+                            ("Filter::getClassName" variable (:type "int") (reparse-symbol classsubparts) [7899 7928])
+                            ("FilterIndices::negative_" variable (:type "int") (reparse-symbol classsubparts) [7941 7974])
+                            ("FilterIndices::keep_organized_" variable (:type "int") (reparse-symbol classsubparts) [7987 8026])
+                            ("FilterIndices::user_filter_value_" variable (:type "int") (reparse-symbol classsubparts) [8039 8081])
+                            ("FilterIndices::extract_removed_indices_" variable (:type "int") (reparse-symbol classsubparts) [8094 8142])
+                            ("FilterIndices::removed_indices_" variable (:type "int") (reparse-symbol classsubparts) [8155 8195])
+                            ("applyFilter" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("output" variable
+                                       (:reference 1
+                                        :type ("PointCloud" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8366 8385]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8342 8386])
+                            ("applyFilter" function
+                               (:arguments 
+                                  ( ("indices" variable
+                                       (:reference 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("int" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [8549 8575]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8525 8629])
+                            ("applyFilterIndices" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("indices" variable
+                                       (:reference 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("int" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [8799 8825]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8768 8826])
+                            ("private" label nil (reparse-symbol classsubparts) [8832 8840])
+                            ("filter_field_name_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8922 8953])
+                            ("filter_limit_min_" variable (:type "float") (reparse-symbol classsubparts) [9034 9058])
+                            ("filter_limit_max_" variable (:type "float") (reparse-symbol classsubparts) [9139 9163]))                          
+                        :superclasses 
+                          ( ("FilterIndices" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [3709 9168])
+                    ("Filter" variable (:type "int") (reparse-symbol namespacesubparts) [9531 14923]))                  
+                :type "namespace")
+                nil [1860 14925]))          
+    :file "passthrough.h"
+    :pointmax 15043
+    :fsize 15042
+    :lastmodtime '(21565 42585 0 0)
+    :unmatched-syntax '((PUBLIC 9524 . 9530) (punctuation 9522 . 9523) (punctuation 9520 . 9521) (symbol 9506 . 9520) (punctuation 9505 . 9506) (punctuation 9504 . 9505) (symbol 9501 . 9504) (punctuation 9500 . 9501) (symbol 9489 . 9500) (symbol 9477 . 9488) (CLASS 9471 . 9476) (punctuation 9467 . 9468) (punctuation 9466 . 9467) (TEMPLATE 9458 . 9466) (USING 8149 . 8154) (USING 8088 . 8093) (USING 8033 . 8038) (USING 7981 . 7986) (USING 7935 . 7940) (USING 7893 . 7898) (USING 7851 . 7856) (USING 7812 . 7817) (USING 7775 . 7780) (punctuation 4446 . 4447) (punctuation 3851 . 3852) (punctuation 3850 . 3851) (punctuation 3849 . 3850) (symbol 3843 . 3849) (punctuation 3842 . 3843) (symbol 3829 . 3842) (TYPENAME 3820 . 3828) (TYPEDEF 3812 . 3819))
+    :lexical-table 
+        '(("PCL_FILTERS_PASSTHROUGH_H_")
+          )
+
+    )
+   (semanticdb-table "filter_indices.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("PCL_FILTERS_FILTER_INDICES_H_" variable (:constant-flag t) nil [1851 1880])
+            ("pcl/filters/filter.h" include (:system-flag t) nil [1882 1913])
+            ("pcl" type
+               (:members 
+                  ( ("removeNaNFromPointCloud" function
+                       (:template 
+                          ( ("PointT" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("cloud_in" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("pcl::PointCloud" type
+                                     (:template-specifier 
+                                        ( ("PointT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2558 2598])
+                            ("index" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("int" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2599 2623]))                          
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [2500 2624])
+                    ("FilterIndices" type
+                       (:template 
+                          ( ("PointT" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [3458 3465])
+                            ("Filter::extract_removed_indices_" variable (:type "int") (reparse-symbol classsubparts) [3478 3519])
+                            ("PointCloud" type
+                               (:typedef ("pcl::PointCloud" type
+                                     (:template-specifier 
+                                        ( ("PointT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "pcl::PointCloud"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3526 3569])
+                            ("Ptr" type
+                               (:typedef ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("FilterIndices" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "boost::shared_ptr"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3577 3632])
+                            ("ConstPtr" type
+                               (:typedef ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("FilterIndices" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "boost::shared_ptr"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3639 3705])
+                            ("FilterIndices" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("extract_removed_indices" variable (:type "bool") (reparse-symbol arg-sub-list) [3916 3946])
+                                    ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3947 3953]))                                  
+                                :type ("FilterIndices" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3901 4169])
+                            ("FilterIndices" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [4223 4270])
+                            ("filter" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("output" variable
+                                       (:reference 1
+                                        :type ("PointCloud" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4304 4323]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4278 4385])
+                            ("filter" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("indices" variable
+                                       (:reference 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("int" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [4593 4619]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4567 4776])
+                            ("setNegative" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("negative" variable (:type "bool") (reparse-symbol arg-sub-list) [5039 5053]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5008 5099])
+                            ("getNegative" function
+                               (:typemodifiers ("inline")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [5369 5445])
+                            ("setKeepOrganized" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("keep_organized" variable (:type "bool") (reparse-symbol arg-sub-list) [5839 5859]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5803 5917])
+                            ("getKeepOrganized" function
+                               (:typemodifiers ("inline")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [6314 6401])
+                            ("setUserFilterValue" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("value" variable (:type "float") (reparse-symbol arg-sub-list) [6735 6747]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6697 6799])
+                            ("protected" label nil (reparse-symbol classsubparts) [6805 6815])
+                            ("Filter::initCompute" variable (:type "int") (reparse-symbol classsubparts) [6829 6857])
+                            ("Filter::deinitCompute" variable (:type "int") (reparse-symbol classsubparts) [6870 6900])
+                            ("negative_" variable (:type "bool") (reparse-symbol classsubparts) [6996 7011])
+                            ("keep_organized_" variable (:type "bool") (reparse-symbol classsubparts) [7112 7133])
+                            ("user_filter_value_" variable (:type "float") (reparse-symbol classsubparts) [7251 7276])
+                            ("applyFilter" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("indices" variable
+                                       (:reference 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("int" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [7384 7410]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [7352 7415])
+                            ("applyFilter" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("output" variable
+                                       (:reference 1
+                                        :type ("PointCloud" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7515 7534]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [7483 7539]))                          
+                        :superclasses 
+                          ( ("Filter" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [3378 7544])
+                    ("Filter" variable (:type "int") (reparse-symbol namespacesubparts) [8373 12062]))                  
+                :type "namespace")
+                nil [1915 12064]))          
+    :file "filter_indices.h"
+    :pointmax 12195
+    :fsize 12194
+    :lastmodtime '(21565 42585 0 0)
+    :unmatched-syntax '((PUBLIC 8366 . 8372) (punctuation 8364 . 8365) (punctuation 8362 . 8363) (symbol 8348 . 8362) (punctuation 8347 . 8348) (punctuation 8346 . 8347) (symbol 8343 . 8346) (punctuation 8342 . 8343) (symbol 8329 . 8342) (symbol 8317 . 8328) (CLASS 8311 . 8316) (punctuation 8307 . 8308) (punctuation 8306 . 8307) (TEMPLATE 8298 . 8306) (USING 6864 . 6869) (USING 6823 . 6828) (punctuation 3945 . 3946) (USING 3472 . 3477))
+    :lexical-table 
+        '(("PCL_FILTERS_FILTER_INDICES_H_")
+          )
+
+    )
+   (semanticdb-table "filter.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("PCL_FILTER_H_" variable (:constant-flag t) nil [1778 1791])
+            ("pcl/pcl_base.h" include (:system-flag t) nil [1793 1818])
+            ("pcl/common/io.h" include (:system-flag t) nil [1819 1845])
+            ("pcl/conversions.h" include (:system-flag t) nil [1846 1874])
+            ("pcl/filters/boost.h" include (:system-flag t) nil [1875 1905])
+            ("cfloat" include (:system-flag t) nil [1906 1923])
+            ("pcl/PointIndices.h" include (:system-flag t) nil [1924 1953])
+            ("pcl" type
+               (:members 
+                  ( ("removeNaNFromPointCloud" function
+                       (:template 
+                          ( ("PointT" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("cloud_in" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("pcl::PointCloud" type
+                                     (:template-specifier 
+                                        ( ("PointT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2416 2456])
+                            ("cloud_out" variable
+                               (:reference 1
+                                :type ("pcl::PointCloud" type
+                                     (:template-specifier 
+                                        ( ("PointT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2485 2520])
+                            ("index" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("int" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2549 2573]))                          
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [2358 2574])
+                    ("removeNaNNormalsFromPointCloud" function
+                       (:template 
+                          ( ("PointT" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("cloud_in" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("pcl::PointCloud" type
+                                     (:template-specifier 
+                                        ( ("PointT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3052 3092])
+                            ("cloud_out" variable
+                               (:reference 1
+                                :type ("pcl::PointCloud" type
+                                     (:template-specifier 
+                                        ( ("PointT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3128 3163])
+                            ("index" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("int" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3199 3223]))                          
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [2987 3224])
+                    ("Filter" type
+                       (:template 
+                          ( ("PointT" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [3554 3561])
+                            ("PCLBase::indices_" variable (:type "int") (reparse-symbol classsubparts) [3574 3600])
+                            ("PCLBase::input_" variable (:type "int") (reparse-symbol classsubparts) [3613 3637])
+                            ("Ptr" type
+                               (:typedef ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Filter" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "boost::shared_ptr"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3645 3693])
+                            ("ConstPtr" type
+                               (:typedef ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Filter" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "boost::shared_ptr"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3700 3759])
+                            ("PointCloud" type
+                               (:typedef ("pcl::PointCloud" type
+                                     (:template-specifier 
+                                        ( ("PointT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "pcl::PointCloud"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3768 3811])
+                            ("PointCloudPtr" type
+                               (:typedef ("PointCloud::Ptr" type (:type "class") nil nil)
+                                :superclasses "PointCloud::Ptr"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3818 3865])
+                            ("PointCloudConstPtr" type
+                               (:typedef ("PointCloud::ConstPtr" type (:type "class") nil nil)
+                                :superclasses "PointCloud::ConstPtr"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3872 3929])
+                            ("Filter" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("extract_removed_indices" variable (:type "bool") (reparse-symbol arg-sub-list) [4141 4171])
+                                    ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4172 4178]))                                  
+                                :type ("Filter" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4133 4330])
+                            ("Filter" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [4375 4396])
+                            ("getRemovedIndices" function
+                               (:typemodifiers ("inline")
+                                :type ("IndicesConstPtr" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4460 4566])
+                            ("getRemovedIndices" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("pi" variable
+                                       (:reference 1
+                                        :type ("PointIndices" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4752 4769]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4715 4825])
+                            ("filter" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("output" variable
+                                       (:reference 1
+                                        :type ("PointCloud" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5030 5049]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5004 5763])
+                            ("protected" label nil (reparse-symbol classsubparts) [5769 5779])
+                            ("PCLBase::initCompute" variable (:type "int") (reparse-symbol classsubparts) [5793 5822])
+                            ("PCLBase::deinitCompute" variable (:type "int") (reparse-symbol classsubparts) [5835 5866])
+                            ("removed_indices_" variable (:type ("IndicesPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5933 5961])
+                            ("filter_name_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6006 6031])
+                            ("extract_removed_indices_" variable (:type "bool") (reparse-symbol classsubparts) [6127 6157])
+                            ("applyFilter" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("output" variable
+                                       (:reference 1
+                                        :type ("PointCloud" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6418 6437]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6386 6442])
+                            ("getClassName" function
+                               (:typemodifiers ("inline")
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6525 6625]))                          
+                        :superclasses 
+                          ( ("PCLBase" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [3480 6630])
+                    ("PCLBase" variable (:type "int") (reparse-symbol namespacesubparts) [6954 9240]))                  
+                :type "namespace")
+                nil [1955 9242]))          
+    :file "filter.h"
+    :pointmax 9348
+    :fsize 9347
+    :lastmodtime '(21681 8903 0 0)
+    :unmatched-syntax '((PUBLIC 6947 . 6953) (punctuation 6945 . 6946) (punctuation 6943 . 6944) (symbol 6929 . 6943) (punctuation 6928 . 6929) (punctuation 6927 . 6928) (symbol 6924 . 6927) (punctuation 6923 . 6924) (symbol 6917 . 6923) (symbol 6905 . 6916) (CLASS 6899 . 6904) (punctuation 6895 . 6896) (punctuation 6894 . 6895) (TEMPLATE 6886 . 6894) (USING 5829 . 5834) (USING 5787 . 5792) (punctuation 4170 . 4171) (USING 3607 . 3612) (USING 3568 . 3573))
+    :lexical-table 
+        '(("PCL_FILTER_H_")
+          )
+
+    )
+   (semanticdb-table "boost.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("PCL_FILTERS_BOOST_H_" variable (:constant-flag t) nil [1873 1893])
+            ("boost/random.hpp" include (:system-flag t) nil [2012 2039])
+            ("boost/random/normal_distribution.hpp" include (:system-flag t) nil [2040 2087])
+            ("boost/shared_ptr.hpp" include (:system-flag t) nil [2088 2119])
+            ("boost/make_shared.hpp" include (:system-flag t) nil [2120 2152])
+            ("boost/dynamic_bitset.hpp" include (:system-flag t) nil [2153 2188])
+            ("boost/mpl/size.hpp" include (:system-flag t) nil [2189 2218])
+            ("boost/unordered_map.hpp" include (:system-flag t) nil [2219 2253])
+            ("boost/fusion/sequence/intrinsic/at_key.hpp" include (:system-flag t) nil [2254 2307])
+            ("boost/bind.hpp" include (:system-flag t) nil [2308 2333])
+            ("boost/function.hpp" include (:system-flag t) nil [2334 2363])
+            ("boost/optional.hpp" include (:system-flag t) nil [2364 2393]))          
+    :file "boost.h"
+    :pointmax 2429
+    :fsize 2428
+    :lastmodtime '(21565 42585 0 0)
+    :unmatched-syntax '((symbol 1923 . 1936) (symbol 1919 . 1922) (symbol 1912 . 1918) (punctuation 1911 . 1912))
+    :lexical-table 
+        '(("PCL_FILTERS_BOOST_H_")
+          )
+
+    )
+   )
+  :file "!usr!local!include!pcl-1.8!pcl!filters!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

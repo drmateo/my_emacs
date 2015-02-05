@@ -1,9 +1,0 @@
-# -*- mode: snippet -*-
-# name: forearch boost
-# key: foreach
-# --
-
-BOOST_FOREACH (${1:type} ${2:var}, ${3:container})
-{
-    $0
-}

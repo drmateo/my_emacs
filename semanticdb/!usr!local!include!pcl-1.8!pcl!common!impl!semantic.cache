@@ -1,0 +1,530 @@
+;; Object impl/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "impl/"
+  :tables (list 
+   (semanticdb-table "io.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("PCL_IO_IMPL_IO_HPP_" variable (:constant-flag t) nil [1831 1850])
+            ("pcl/common/concatenate.h" include (:system-flag t) nil [1852 1887])
+            ("pcl/common/copy_point.h" include (:system-flag t) nil [1888 1922])
+            ("pcl/point_types.h" include (:system-flag t) nil [1923 1951])
+            ("getFieldIndex" function
+               (:template 
+                  ( ("PointT" type (:type "class") nil nil))                  
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("pcl::PointCloud" type
+                             (:template-specifier 
+                                ( ("PointT" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2099 2131])
+                    ("field_name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2153 2183])
+                    ("fields" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("pcl::PCLPointField" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2205 2245]))                  
+                :parent "pcl")
+                nil [2048 2538])
+            ("getFieldIndex" function
+               (:template 
+                  ( ("PointT" type (:type "class") nil nil))                  
+                :type "int"
+                :arguments 
+                  ( ("field_name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2686 2716])
+                    ("fields" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("pcl::PCLPointField" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2738 2778]))                  
+                :parent "pcl")
+                nil [2635 3071])
+            ("getFields" function
+               (:template 
+                  ( ("PointT" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("pcl::PointCloud" type
+                             (:template-specifier 
+                                ( ("PointT" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3216 3248])
+                    ("fields" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("pcl::PCLPointField" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3249 3289]))                  
+                :parent "pcl")
+                nil [3168 3447])
+            ("getFields" function
+               (:template 
+                  ( ("PointT" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("fields" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("pcl::PCLPointField" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3592 3632]))                  
+                :parent "pcl")
+                nil [3544 3790])
+            ("getFieldsList" function
+               (:template 
+                  ( ("PointT" type (:type "class") nil nil))                  
+                :type ("std::string" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("pcl::PointCloud" type
+                             (:template-specifier 
+                                ( ("PointT" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3946 3978]))                  
+                :parent "pcl")
+                nil [3887 4331])
+            ("copyPointCloud" function
+               (:template 
+                  ( ("PointInT" type (:type "class") nil nil)
+                    ("PointOutT" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("cloud_in" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("pcl::PointCloud" type
+                             (:template-specifier 
+                                ( ("PointInT" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4503 4545])
+                    ("cloud_out" variable
+                       (:reference 1
+                        :type ("pcl::PointCloud" type
+                             (:template-specifier 
+                                ( ("PointOutT" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4567 4605]))                  
+                :parent "pcl")
+                nil [4428 5375])
+            ("copyPointCloud" function
+               (:template 
+                  ( ("PointT" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("cloud_in" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("pcl::PointCloud" type
+                             (:template-specifier 
+                                ( ("PointT" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5525 5565])
+                    ("indices" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5588 5620])
+                    ("cloud_out" variable
+                       (:reference 1
+                        :type ("pcl::PointCloud" type
+                             (:template-specifier 
+                                ( ("PointT" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5642 5677]))                  
+                :parent "pcl")
+                nil [5472 6327])
+            ("copyPointCloud" function
+               (:template 
+                  ( ("PointT" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("cloud_in" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("pcl::PointCloud" type
+                             (:template-specifier 
+                                ( ("PointT" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6477 6517])
+                    ("indices" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil)
+                                  ("Eigen::aligned_allocator" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6540 6604])
+                    ("cloud_out" variable
+                       (:reference 1
+                        :type ("pcl::PointCloud" type
+                             (:template-specifier 
+                                ( ("PointT" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6626 6661]))                  
+                :parent "pcl")
+                nil [6424 7312])
+            ("copyPointCloud" function
+               (:template 
+                  ( ("PointInT" type (:type "class") nil nil)
+                    ("PointOutT" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("cloud_in" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("pcl::PointCloud" type
+                             (:template-specifier 
+                                ( ("PointInT" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7484 7526])
+                    ("indices" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7548 7580])
+                    ("cloud_out" variable
+                       (:reference 1
+                        :type ("pcl::PointCloud" type
+                             (:template-specifier 
+                                ( ("PointOutT" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7602 7640]))                  
+                :parent "pcl")
+                nil [7409 8156])
+            ("copyPointCloud" function
+               (:template 
+                  ( ("PointInT" type (:type "class") nil nil)
+                    ("PointOutT" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("cloud_in" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("pcl::PointCloud" type
+                             (:template-specifier 
+                                ( ("PointInT" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8328 8370])
+                    ("indices" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil)
+                                  ("Eigen::aligned_allocator" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8392 8456])
+                    ("cloud_out" variable
+                       (:reference 1
+                        :type ("pcl::PointCloud" type
+                             (:template-specifier 
+                                ( ("PointOutT" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8478 8516]))                  
+                :parent "pcl")
+                nil [8253 9045])
+            ("copyPointCloud" function
+               (:template 
+                  ( ("PointT" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("cloud_in" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("pcl::PointCloud" type
+                             (:template-specifier 
+                                ( ("PointT" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9195 9235])
+                    ("indices" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("pcl::PointIndices" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9258 9291])
+                    ("cloud_out" variable
+                       (:reference 1
+                        :type ("pcl::PointCloud" type
+                             (:template-specifier 
+                                ( ("PointT" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9313 9348]))                  
+                :parent "pcl")
+                nil [9142 10015])
+            ("copyPointCloud" function
+               (:template 
+                  ( ("PointInT" type (:type "class") nil nil)
+                    ("PointOutT" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("cloud_in" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("pcl::PointCloud" type
+                             (:template-specifier 
+                                ( ("PointInT" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10188 10230])
+                    ("indices" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("pcl::PointIndices" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10252 10285])
+                    ("cloud_out" variable
+                       (:reference 1
+                        :type ("pcl::PointCloud" type
+                             (:template-specifier 
+                                ( ("PointOutT" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10307 10345]))                  
+                :parent "pcl")
+                nil [10113 10406])
+            ("copyPointCloud" function
+               (:template 
+                  ( ("PointT" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("cloud_in" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("pcl::PointCloud" type
+                             (:template-specifier 
+                                ( ("PointT" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10556 10596])
+                    ("indices" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("pcl::PointIndices" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10619 10665])
+                    ("cloud_out" variable
+                       (:reference 1
+                        :type ("pcl::PointCloud" type
+                             (:template-specifier 
+                                ( ("PointT" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10687 10722]))                  
+                :parent "pcl")
+                nil [10503 11647])
+            ("copyPointCloud" function
+               (:template 
+                  ( ("PointInT" type (:type "class") nil nil)
+                    ("PointOutT" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("cloud_in" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("pcl::PointCloud" type
+                             (:template-specifier 
+                                ( ("PointInT" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11819 11861])
+                    ("indices" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("pcl::PointIndices" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11884 11930])
+                    ("cloud_out" variable
+                       (:reference 1
+                        :type ("pcl::PointCloud" type
+                             (:template-specifier 
+                                ( ("PointOutT" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11952 11990]))                  
+                :parent "pcl")
+                nil [11744 12926])
+            ("concatenateFields" function
+               (:template 
+                  ( ("PointIn1T" type (:type "class") nil nil)
+                    ("PointIn2T" type (:type "class") nil nil)
+                    ("PointOutT" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("cloud1_in" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("pcl::PointCloud" type
+                             (:template-specifier 
+                                ( ("PointIn1T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13122 13166])
+                    ("cloud2_in" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("pcl::PointCloud" type
+                             (:template-specifier 
+                                ( ("PointIn2T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13191 13235])
+                    ("cloud_out" variable
+                       (:reference 1
+                        :type ("pcl::PointCloud" type
+                             (:template-specifier 
+                                ( ("PointOutT" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13260 13298]))                  
+                :parent "pcl")
+                nil [13023 14346])
+            ("copyPointCloud" function
+               (:template 
+                  ( ("PointT" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("cloud_in" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("pcl::PointCloud" type
+                             (:template-specifier 
+                                ( ("PointT" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14496 14536])
+                    ("cloud_out" variable
+                       (:reference 1
+                        :type ("pcl::PointCloud" type
+                             (:template-specifier 
+                                ( ("PointT" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14537 14572])
+                    ("top" variable (:type "int") (reparse-symbol arg-sub-list) [14594 14602])
+                    ("bottom" variable (:type "int") (reparse-symbol arg-sub-list) [14603 14614])
+                    ("left" variable (:type "int") (reparse-symbol arg-sub-list) [14615 14624])
+                    ("right" variable (:type "int") (reparse-symbol arg-sub-list) [14625 14635])
+                    ("border_type" variable (:type ("pcl::InterpolationType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14636 14671])
+                    ("value" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("PointT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14672 14692]))                  
+                :parent "pcl")
+                nil [14443 19217]))          
+    :file "io.hpp"
+    :pointmax 19248
+    :fsize 19247
+    :lastmodtime '(21572 7853 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("PCL_IO_IMPL_IO_HPP_")
+          )
+
+    )
+   (semanticdb-table "copy_point.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("PCL_COMMON_IMPL_COPY_POINT_HPP_" variable (:constant-flag t) nil [1783 1814])
+            ("pcl/point_types.h" include (:system-flag t) nil [1816 1844])
+            ("pcl/point_traits.h" include (:system-flag t) nil [1845 1874])
+            ("pcl/for_each_type.h" include (:system-flag t) nil [1875 1905])
+            ("pcl/common/concatenate.h" include (:system-flag t) nil [1906 1941])
+            ("pcl" type
+               (:members 
+                  ( ("detail" type
+                       (:members 
+                          ( ("CopyPointHelper" type (:type "struct") (reparse-symbol namespacesubparts) [3176 3203]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1962 7293]))                  
+                :type "namespace")
+                nil [1943 7296])
+            ("copyPoint" function
+               (:template 
+                  ( ("PointInT" type (:type "class") nil nil)
+                    ("PointOutT" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("point_in" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("PointInT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7368 7393])
+                    ("point_out" variable
+                       (:reference 1
+                        :type ("PointOutT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7394 7415]))                  
+                :parent "pcl")
+                nil [7298 7502]))          
+    :file "copy_point.hpp"
+    :pointmax 7546
+    :fsize 7545
+    :lastmodtime '(21565 42585 0 0)
+    :unmatched-syntax '((punctuation 7287 . 7288) (semantic-list 6025 . 7287) (punctuation 6019 . 6020) (symbol 6015 . 6019) (punctuation 6014 . 6015) (punctuation 6013 . 6014) (punctuation 6012 . 6013) (punctuation 6010 . 6011) (punctuation 6008 . 6009) (punctuation 6006 . 6007) (punctuation 6004 . 6005) (symbol 6001 . 6004) (punctuation 6000 . 6001) (punctuation 5999 . 6000) (symbol 5993 . 5999) (punctuation 5992 . 5993) (punctuation 5991 . 5992) (symbol 5988 . 5991) (punctuation 5986 . 5987) (symbol 5977 . 5986) (punctuation 5976 . 5977) (symbol 5967 . 5976) (punctuation 5966 . 5967) (punctuation 5965 . 5966) (symbol 5959 . 5965) (punctuation 5958 . 5959) (punctuation 5957 . 5958) (symbol 5954 . 5957) (punctuation 5849 . 5850) (punctuation 5848 . 5849) (symbol 5844 . 5848) (punctuation 5843 . 5844) (punctuation 5842 . 5843) (symbol 5836 . 5842) (punctuation 5835 . 5836) (punctuation 5834 . 5835) (symbol 5831 . 5834) (punctuation 5829 . 5830) (symbol 5821 . 5829) (punctuation 5820 . 5821) (symbol 5811 . 5820) (punctuation 5810 . 5811) (punctuation 5809 . 5810) (symbol 5803 . 5809) (punctuation 5802 . 5803) (punctuation 5801 . 5802) (symbol 5798 . 5801) (punctuation 5797 . 5798) (symbol 5793 . 5797) (punctuation 5792 . 5793) (punctuation 5791 . 5792) (symbol 5788 . 5791) (punctuation 5787 . 5788) (punctuation 5786 . 5787) (symbol 5781 . 5786) (punctuation 5693 . 5694) (punctuation 5692 . 5693) (punctuation 5690 . 5691) (symbol 5686 . 5690) (punctuation 5685 . 5686) (punctuation 5684 . 5685) (symbol 5678 . 5684) (punctuation 5677 . 5678) (punctuation 5676 . 5677) (symbol 5673 . 5676) (punctuation 5671 . 5672) (symbol 5662 . 5671) (punctuation 5661 . 5662) (symbol 5652 . 5661) (punctuation 5651 . 5652) (punctuation 5650 . 5651) (symbol 5644 . 5650) (punctuation 5643 . 5644) (punctuation 5642 . 5643) (symbol 5639 . 5642) (punctuation 5534 . 5535) (punctuation 5533 . 5534) (symbol 5530 . 5533) (punctuation 5529 . 5530) (punctuation 5528 . 5529) (symbol 5522 . 5528) (punctuation 5521 . 5522) (punctuation 5520 . 5521) (symbol 5517 . 5520) (punctuation 5515 . 5516) (symbol 5507 . 5515) (punctuation 5506 . 5507) (symbol 5497 . 5506) (punctuation 5496 . 5497) (punctuation 5495 . 5496) (symbol 5489 . 5495) (punctuation 5488 . 5489) (punctuation 5487 . 5488) (symbol 5484 . 5487) (punctuation 5483 . 5484) (symbol 5479 . 5483) (punctuation 5478 . 5479) (punctuation 5477 . 5478) (symbol 5474 . 5477) (punctuation 5473 . 5474) (punctuation 5472 . 5473) (symbol 5467 . 5472) (punctuation 5466 . 5467) (symbol 5463 . 5466) (punctuation 5462 . 5463) (punctuation 5461 . 5462) (symbol 5458 . 5461) (punctuation 5457 . 5458) (punctuation 5456 . 5457) (symbol 5451 . 5456) (punctuation 5379 . 5380) (punctuation 5378 . 5379) (punctuation 5376 . 5377) (symbol 5367 . 5376) (punctuation 5365 . 5366) (symbol 5357 . 5365) (punctuation 5356 . 5357) (symbol 5349 . 5356) (punctuation 5348 . 5349) (punctuation 5347 . 5348) (symbol 5342 . 5347) (punctuation 5341 . 5342) (symbol 5337 . 5341) (punctuation 5336 . 5337) (punctuation 5335 . 5336) (symbol 5332 . 5335) (punctuation 5331 . 5332) (punctuation 5330 . 5331) (symbol 5325 . 5330) (punctuation 5324 . 5325) (symbol 5320 . 5324) (punctuation 5319 . 5320) (punctuation 5318 . 5319) (symbol 5315 . 5318) (punctuation 5314 . 5315) (punctuation 5313 . 5314) (symbol 5308 . 5313) (punctuation 5307 . 5308) (symbol 5298 . 5307) (punctuation 5297 . 5298) (punctuation 5296 . 5297) (symbol 5291 . 5296) (TYPENAME 5282 . 5290) (punctuation 5253 . 5254) (symbol 5244 . 5253) (punctuation 5242 . 5243) (symbol 5234 . 5242) (punctuation 5233 . 5234) (symbol 5218 . 5233) (STRUCT 5211 . 5217) (punctuation 5205 . 5206) (symbol 5196 . 5205) (TYPENAME 5187 . 5195) (punctuation 5185 . 5186) (symbol 5177 . 5185) (TYPENAME 5168 . 5176) (punctuation 5167 . 5168) (TEMPLATE 5158 . 5166) (punctuation 5151 . 5152) (semantic-list 4694 . 5151) (punctuation 4688 . 4689) (symbol 4684 . 4688) (punctuation 4683 . 4684) (punctuation 4682 . 4683) (punctuation 4681 . 4682) (punctuation 4679 . 4680) (punctuation 4677 . 4678) (punctuation 4675 . 4676) (punctuation 4673 . 4674) (symbol 4669 . 4673) (punctuation 4668 . 4669) (punctuation 4667 . 4668) (symbol 4661 . 4667) (punctuation 4660 . 4661) (punctuation 4659 . 4660) (symbol 4656 . 4659) (punctuation 4654 . 4655) (symbol 4645 . 4654) (punctuation 4644 . 4645) (symbol 4635 . 4644) (punctuation 4634 . 4635) (punctuation 4633 . 4634) (symbol 4627 . 4633) (punctuation 4626 . 4627) (punctuation 4625 . 4626) (symbol 4622 . 4625) (punctuation 4517 . 4518) (punctuation 4516 . 4517) (symbol 4512 . 4516) (punctuation 4511 . 4512) (punctuation 4510 . 4511) (symbol 4504 . 4510) (punctuation 4503 . 4504) (punctuation 4502 . 4503) (symbol 4499 . 4502) (punctuation 4497 . 4498) (symbol 4489 . 4497) (punctuation 4488 . 4489) (symbol 4479 . 4488) (punctuation 4478 . 4479) (punctuation 4477 . 4478) (symbol 4471 . 4477) (punctuation 4470 . 4471) (punctuation 4469 . 4470) (symbol 4466 . 4469) (punctuation 4465 . 4466) (symbol 4461 . 4465) (punctuation 4460 . 4461) (punctuation 4459 . 4460) (symbol 4456 . 4459) (punctuation 4455 . 4456) (punctuation 4454 . 4455) (symbol 4449 . 4454) (punctuation 4361 . 4362) (punctuation 4360 . 4361) (punctuation 4358 . 4359) (symbol 4355 . 4358) (punctuation 4354 . 4355) (punctuation 4353 . 4354) (symbol 4347 . 4353) (punctuation 4346 . 4347) (punctuation 4345 . 4346) (symbol 4342 . 4345) (punctuation 4340 . 4341) (symbol 4331 . 4340) (punctuation 4330 . 4331) (symbol 4321 . 4330) (punctuation 4320 . 4321) (punctuation 4319 . 4320) (symbol 4313 . 4319) (punctuation 4312 . 4313) (punctuation 4311 . 4312) (symbol 4308 . 4311) (punctuation 4203 . 4204) (punctuation 4202 . 4203) (symbol 4199 . 4202) (punctuation 4198 . 4199) (punctuation 4197 . 4198) (symbol 4191 . 4197) (punctuation 4190 . 4191) (punctuation 4189 . 4190) (symbol 4186 . 4189) (punctuation 4184 . 4185) (symbol 4176 . 4184) (punctuation 4175 . 4176) (symbol 4166 . 4175) (punctuation 4165 . 4166) (punctuation 4164 . 4165) (symbol 4158 . 4164) (punctuation 4157 . 4158) (punctuation 4156 . 4157) (symbol 4153 . 4156) (punctuation 4152 . 4153) (symbol 4148 . 4152) (punctuation 4147 . 4148) (punctuation 4146 . 4147) (symbol 4143 . 4146) (punctuation 4142 . 4143) (punctuation 4141 . 4142) (symbol 4136 . 4141) (punctuation 4048 . 4049) (punctuation 4047 . 4048) (punctuation 4045 . 4046) (symbol 4036 . 4045) (punctuation 4035 . 4036) (symbol 4026 . 4035) (punctuation 4025 . 4026) (punctuation 4024 . 4025) (symbol 4018 . 4024) (punctuation 4017 . 4018) (punctuation 4016 . 4017) (symbol 4013 . 4016) (punctuation 4012 . 4013) (symbol 4008 . 4012) (punctuation 4007 . 4008) (punctuation 4006 . 4007) (symbol 4003 . 4006) (punctuation 4002 . 4003) (punctuation 4001 . 4002) (symbol 3996 . 4001) (punctuation 3908 . 3909) (punctuation 3907 . 3908) (punctuation 3905 . 3906) (symbol 3897 . 3905) (punctuation 3896 . 3897) (symbol 3887 . 3896) (punctuation 3886 . 3887) (punctuation 3885 . 3886) (symbol 3879 . 3885) (punctuation 3878 . 3879) (punctuation 3877 . 3878) (symbol 3874 . 3877) (punctuation 3873 . 3874) (symbol 3869 . 3873) (punctuation 3868 . 3869) (punctuation 3867 . 3868) (symbol 3864 . 3867) (punctuation 3863 . 3864) (punctuation 3862 . 3863) (symbol 3857 . 3862) (punctuation 3856 . 3857) (symbol 3853 . 3856) (punctuation 3852 . 3853) (punctuation 3851 . 3852) (symbol 3848 . 3851) (punctuation 3847 . 3848) (punctuation 3846 . 3847) (symbol 3841 . 3846) (punctuation 3769 . 3770) (punctuation 3768 . 3769) (punctuation 3766 . 3767) (symbol 3757 . 3766) (punctuation 3755 . 3756) (symbol 3747 . 3755) (punctuation 3746 . 3747) (symbol 3739 . 3746) (punctuation 3738 . 3739) (punctuation 3737 . 3738) (symbol 3732 . 3737) (punctuation 3731 . 3732) (symbol 3727 . 3731) (punctuation 3726 . 3727) (punctuation 3725 . 3726) (symbol 3722 . 3725) (punctuation 3721 . 3722) (punctuation 3720 . 3721) (symbol 3715 . 3720) (punctuation 3714 . 3715) (symbol 3710 . 3714) (punctuation 3709 . 3710) (punctuation 3708 . 3709) (symbol 3705 . 3708) (punctuation 3704 . 3705) (punctuation 3703 . 3704) (symbol 3698 . 3703) (punctuation 3697 . 3698) (symbol 3688 . 3697) (punctuation 3687 . 3688) (punctuation 3686 . 3687) (symbol 3681 . 3686) (TYPENAME 3672 . 3680) (punctuation 3643 . 3644) (symbol 3634 . 3643) (punctuation 3632 . 3633) (symbol 3624 . 3632) (punctuation 3623 . 3624) (symbol 3608 . 3623) (STRUCT 3601 . 3607) (punctuation 3595 . 3596) (symbol 3586 . 3595) (TYPENAME 3577 . 3585) (punctuation 3575 . 3576) (symbol 3567 . 3575) (TYPENAME 3558 . 3566) (punctuation 3557 . 3558) (TEMPLATE 3548 . 3556) (punctuation 3541 . 3542) (semantic-list 3381 . 3541) (punctuation 3375 . 3376) (symbol 3371 . 3375) (punctuation 3370 . 3371) (punctuation 3369 . 3370) (punctuation 3368 . 3369) (punctuation 3366 . 3367) (symbol 3357 . 3366) (punctuation 3355 . 3356) (symbol 3347 . 3355) (punctuation 3346 . 3347) (symbol 3339 . 3346) (punctuation 3338 . 3339) (punctuation 3337 . 3338) (symbol 3332 . 3337) (punctuation 3331 . 3332) (symbol 3322 . 3331) (punctuation 3321 . 3322) (punctuation 3320 . 3321) (symbol 3315 . 3320) (TYPENAME 3306 . 3314) (punctuation 3304 . 3305) (symbol 3295 . 3304) (punctuation 3293 . 3294) (symbol 3285 . 3293) (punctuation 3284 . 3285) (symbol 3269 . 3284) (STRUCT 3262 . 3268) (punctuation 3256 . 3257) (symbol 3247 . 3256) (TYPENAME 3238 . 3246) (punctuation 3236 . 3237) (symbol 3228 . 3236) (TYPENAME 3219 . 3227) (punctuation 3218 . 3219) (TEMPLATE 3209 . 3217) (punctuation 3170 . 3171) (VOID 3166 . 3170) (punctuation 3164 . 3165) (symbol 3157 . 3163) (TYPENAME 3148 . 3156) (punctuation 3146 . 3147) (symbol 3137 . 3146) (TYPENAME 3128 . 3136) (punctuation 3126 . 3127) (symbol 3118 . 3126) (TYPENAME 3109 . 3117) (punctuation 3108 . 3109) (TEMPLATE 3099 . 3107))
+    :lexical-table 
+        '(("PCL_COMMON_IMPL_COPY_POINT_HPP_")
+          )
+
+    )
+   )
+  :file "!usr!local!include!pcl-1.8!pcl!common!impl!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )
