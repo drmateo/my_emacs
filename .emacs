@@ -39,21 +39,36 @@
 ;; treat .h files as c++ files
 (add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
 
-; Add cmake listfile names to the mode list.
+					; Add cmake listfile names to the mode list.
 (setq auto-mode-alist
-	  (append
-	   '(("CMakeLists\\.txt\\'" . cmake-mode))
-	   '(("\\.cmake\\'" . cmake-mode))
-	   auto-mode-alist))
+      (append
+       '(("CMakeLists\\.txt\\'" . cmake-mode))
+       '(("\\.cmake\\'" . cmake-mode))
+       auto-mode-alist))
 
 (autoload 'cmake-mode "~/.emacs.d/cmake-mode.el" t)
 
 (autoload 'cmake-font-lock-activate "cmake-font-lock" nil t)
 (add-hook 'cmake-mode-hook 'cmake-font-lock-activate)
 
+
+
+(require 'yasnippet)
+(setq yas-snippet-dirs (append yas-snippet-dirs
+			       '("~/.emacs.d/rosemacs/snippets/")))
+(yas-global-mode 1)
+(setq yas-reload-all t)
+(setq yas-also-auto-indent-first-line t)
+(setq yas-triggers-in-field t)
+(setq yas-wrap-around-region t)
+(require 'dropdown-list)
+(setq yas-prompt-functions '(yas-dropdown-prompt
+			     yas-ido-prompt
+			     yas-completing-prompt))
+
 (require 'company-c-headers)
 ;;(add-hook 'c-mode-common-hook 'auto-complete-mode)
-;;(add-hook 'c-mode-common-hook 'flymake-mode)
+(add-hook 'c-mode-common-hook 'flymake-mode)
 (add-to-list 'company-backends 'company-c-headers)
 (add-to-list 'company-backends 'auto-complete-clang-autoloads)
 (add-hook 'after-init-hook 'global-company-mode)
@@ -66,10 +81,8 @@
                               (string-match "^/usr/src/linux/include/.*" buffer-file-name)))
                     (cppcm-reload-all))
               )))
-(add-hook 'c-mode-common-hook
-	  (lambda ()
-	    (when (derived-mode-p 'c-mode 'c++-mode-mode 'java-mode)
-	      (ggtags-mode 1))))
+(require 'ggtags)
+(add-hook 'c-mode-common-hook 'ggtags-mode)
 (add-hook 'c-mode-common-hook 'hs-minor-mode)
 (add-hook 'c-mode-common-hook 'linum-mode)
 (require 'pcl-c-style)
@@ -81,6 +94,32 @@
 (global-set-key (kbd "C-c C-g")
 		'(lambda ()(interactive) (gud-gdb (concat "gdb --fullname " (cppcm-get-exe-path-current-buffer)))))
 (setq cppcm-extra-preprocss-flags-from-user '("-I/usr/src/linux/include" "-DNDEBUG"))
+
+(setq company-async-timeout 6)
+
+(defun check-expansion ()
+  (save-excursion
+    (if (looking-at "\\_>") t
+      (backward-char 1)
+      (if (looking-at "\\.") t
+	(backward-char 1)
+	(if (looking-at "->") t nil)))))
+
+(defun do-yas-expand ()
+  (let ((yas/fallback-behavior 'return-nil))
+    (yas/expand)))
+
+(defun tab-indent-or-complete ()
+  (interactive)
+  (if (minibufferp)
+      (minibuffer-complete)
+    (if (or (not yas/minor-mode)
+	    (null (do-yas-expand)))
+	(if (check-expansion)
+	    (company-complete)
+	  (indent-for-tab-command)))))
+
+(global-set-key [tab] 'tab-indent-or-complete)
 
 ;;evil-matchit mode enable
 ;;(require 'evil-matchit)
@@ -106,19 +145,6 @@
 (defun my-cmake-fix-underscrore ()
   (modify-syntax-entry ?_  "_" cmake-mode-syntax-table))
 (add-hook 'cmake-mode-hook 'my-cmake-fix-underscrore)
-
-(require 'yasnippet)
-(setq yas-snippet-dirs (append yas-snippet-dirs
-			       '("~/.emacs.d/rosemacs/snippets/")))
-(yas-global-mode 1)
-(setq yas-reload-all t)
-(setq yas-also-auto-indent-first-line t)
-(setq yas-triggers-in-field t)
-(setq yas-wrap-around-region t)
-(require 'dropdown-list)
-(setq yas-prompt-functions '(yas-dropdown-prompt
-			     yas-ido-prompt
-			     yas-completing-prompt))
 
 ;; Tell emacs where to find the rosemacs sources
 ;; replace the path with location of rosemacs on your system
