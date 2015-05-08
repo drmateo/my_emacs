@@ -36,6 +36,17 @@
 ;; Remove startup message
 (setq inhibit-startup-message t)
 
+;; F11 = Full Screen
+(defun toggle-fullscreen (&optional f)
+  (interactive)
+  (let ((current-value (frame-parameter nil 'fullscreen)))
+    (set-frame-parameter nil 'fullscreen
+      (if (equal 'fullboth current-value)
+        (if (boundp 'old-fullscreen) old-fullscreen nil)
+        (progn (setq old-fullscreen current-value)
+          'fullboth)))))
+(global-set-key [f11] 'toggle-fullscreen)
+
 ;; treat .h files as c++ files
 (add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
 
@@ -68,7 +79,7 @@
 
 (require 'company-c-headers)
 ;;(add-hook 'c-mode-common-hook 'auto-complete-mode)
-(add-hook 'c-mode-common-hook 'flymake-mode)
+;;(add-hook 'c-mode-common-hook 'flymake-mode)
 (add-to-list 'company-backends 'company-c-headers)
 (add-to-list 'company-backends 'auto-complete-clang-autoloads)
 (add-hook 'after-init-hook 'global-company-mode)
@@ -161,7 +172,6 @@
 (autopair-global-mode 1)
 (setq autopair-autowrap t)
 
-
 ;; Expand Member Functions.
 (require 'member-functions)
 (setq mf--source-file-extension "cpp")
@@ -170,13 +180,23 @@
 ;; Change some settings
 (workgroups-mode 1)        ; put this one at the bottom of .emacs
 
+;; Projectile for all
+(projectile-global-mode)
+
+(global-set-key (kbd "S-C-<left>") 'shrink-window-horizontally)
+(global-set-key (kbd "S-C-<right>") 'enlarge-window-horizontally)
+(global-set-key (kbd "S-C-<down>") 'shrink-window)
+(global-set-key (kbd "S-C-<up>") 'enlarge-window)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(ansi-color-names-vector ["#242424" "#e5786d" "#95e454" "#cae682" "#8ac6f2" "#333366" "#ccaa8f" "#f6f3e8"])
  '(column-number-mode t)
+ '(custom-enabled-themes (quote (wheatgrass)))
+ '(custom-safe-themes (quote ("789844278c5a75283b5015c1fc7bebe7e4cf97843b8f8cffe21fafa05e81e90a" default)))
  '(show-paren-mode t)
  '(tool-bar-mode nil))
 (custom-set-faces
